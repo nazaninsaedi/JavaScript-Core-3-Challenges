@@ -17,6 +17,38 @@ let saying = '';
 // 3. Make a cow that takes a string
 
 function cowsay(saying) {
+    if (saying.length > 20) {
+        saying = saying.substring(0, 17) + '...';
+
+    }
+    //construct the cow
+    let cow = `
+    ${topLine}
+   /                    \\
+  /   ${speechBubble}   \\
+ /______________________\\
+(                       )
+(       ${saying}        )
+(                       )
+  \\______________________/
+         \\  /(__)
+          (oo)\\_______
+          (__)        )\\/\\
+             ||----w |
+             ||     ||
+`;
+
+//log the cow to the console
+console.log(cow);
+}
+
+//check if an argument is provided
+if (ProcessingInstruction.argv.length < 3) { 
+    
+}
+
+
+
 // how will you make the speech bubble contain the text?
 
 // where will the cow picture go?
