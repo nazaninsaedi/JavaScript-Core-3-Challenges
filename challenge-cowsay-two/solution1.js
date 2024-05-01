@@ -43,7 +43,12 @@ console.log(cow);
 }
 
 //check if an argument is provided
-if (ProcessingInstruction.argv.length < 3) { 
+if (Process.argv.length < 3) {
+    console.log("Please provide an argument for the cow to say.");
+} else {"
+// Get the argument from the command line
+    let saying = process.argv[2];
+    cowsay(saying);
     
 }
 
