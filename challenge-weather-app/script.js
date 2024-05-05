@@ -11,7 +11,6 @@ const fetchWeatherData = async (city) => {
     throw error;
   }
 };
-
 const unsplashAccessKey = "xaHreyL1u-ao1WMY06UZjU2WiJE2XO6k9NqNpNLsv6E";
 const fetchImages = async (description) => {
   try {
